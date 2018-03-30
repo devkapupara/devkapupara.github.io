@@ -5,7 +5,7 @@ var interval = setInterval(changeHrWidth, 10)
 
 title.animate({opacity:1}, 800, function() {
   title.animate({opacity:0}, 800, function() {
-    title.text("meet Dev Kapupara")
+    title.text("Meet Dev Kapupara")
     title.animate({opacity:1}, 800, function(){
       $(".jumbotron h2").animate({opacity:1}, 800)
     }).delay(400)

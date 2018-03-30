@@ -37,7 +37,7 @@ a{
 }
 
 a:hover{
-  color: yellow;
+  color: rgb(246, 219, 123);
 }
 
 .jumbotron-fluid{
@@ -49,12 +49,12 @@ a:hover{
 }
 
 code{
-  color: yellow;
+  color: rgb(246, 219, 123);
 }
 
 span{
   margin-left: 140px;
-  color: yellow;
+  color: rgb(246, 219, 123);
   font-size: 32px;
 }
 
@@ -71,7 +71,7 @@ h2{
 h3{
   text-align: center;
   text-decoration: underline;
-  color: yellow;
+  color: rgb(246, 219, 123);
 }
 
 p{
