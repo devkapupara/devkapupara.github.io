@@ -16,7 +16,7 @@ body{
   background: #0C090D;
 }
 
-ul{
+.follow-me{
   margin: -40px;
   list-style-type: none;
   position: fixed;
@@ -69,6 +69,12 @@ h3{
   text-align: center;
   text-decoration: underline;
   color: rgb(246, 219, 123);
+}
+
+.img{
+  padding: 10px;
+  height: 60px;
+  width: 60px;
 }
 
 p{
