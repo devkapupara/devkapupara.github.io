@@ -1,7 +1,7 @@
 var title = $(".jumbotron h1")
 var hr = $('hr')
 
-var interval = setInterval(changeHrWidth, 10)
+var interval = setInterval(changeHrWidth, 8)
 
 title.animate({opacity:1}, 800, function() {
   title.animate({opacity:0}, 800, function() {
@@ -15,9 +15,9 @@ function changeHrWidth() {
   if (width / parseInt(hr.parent().width()) >= 0.8)
   {
     clearInterval(interval)
-    $(".jumbotron h2").animate({opacity:1}, 800) 
+    $(".jumbotron h2").animate({opacity:1}, 800)
     $('#content').animate({opacity: 1}, 800)
     $(".follow-me").animate({opacity:1}, 800)
   }
-  hr.css('width', width + 3 + 'px')
+  hr.css('width', width + 4 + 'px')
 }
