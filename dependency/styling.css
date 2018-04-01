@@ -77,14 +77,10 @@ h3{
   width: 60px;
 }
 
-p{
-  text-align: center;
-}
-
 hr{
   height: 3px;
   border-style: solid;
-  width: 40px;
+  width: 0px;
   border-radius: 20px;
   background: white;
 }
@@ -101,4 +97,19 @@ hr{
 	top: 0;
 	left: 0;
 	z-index: -1;
+}
+
+.footer {
+  padding: 10px;
+  position: static;
+  bottom: 0;
+  width: 100%;
+}
+
+#copyright{
+  float: left;
+}
+
+#email{
+  float: right;
 }
