@@ -16,13 +16,13 @@ title.animate({opacity:1}, 500, function() {
 function changeHrWidth() {
   var width = parseInt(hr.css('width'))
   var percent = width / parseInt(hr.parent().width())
-  if(percent >= 0.7)
+  if(percent >= 0.6)
     content.animate({opacity: 1}, 500)
   if (percent >=0.8)
   {
-    clearInterval(interval)
     footer.animate({opacity: 1}, 500)
     $(".follow-me").animate({opacity:1}, 500)
+    clearInterval(interval)
   }
   hr.css('width', width + 4 + 'px')
 }
