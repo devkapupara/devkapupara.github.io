@@ -2,12 +2,13 @@ var title = $(".jumbotron h1")
 var hr = $('hr')
 var content = $('#content')
 var footer = $('.footer#content')
+var followme = $('.follow-me')
 
 var interval = setInterval(changeHrWidth, 15)
 
 title.animate({opacity:1}, 500, function() {
   title.animate({opacity:0}, 500, function() {
-    title.text("Meet Dev Kapupara").animate({opacity:1}, 800, function() {
+    title.text("Meet Dev Kapupara").animate({opacity:1}, 500, function() {
       $('.jumbotron h2').animate({opacity:1}, 500)
     }).delay(400)
   }).delay(400)
@@ -20,8 +21,9 @@ function changeHrWidth() {
     content.animate({opacity: 1}, 500)
   if (percent >=0.8)
   {
-    footer.animate({opacity: 1}, 500)
-    $(".follow-me").animate({opacity:1}, 500)
+    footer.animate({opacity: 1}, 500, function() {
+      followme.animate({opacity:1}, 500)
+    })
     clearInterval(interval)
   }
   hr.css('width', width + 4 + 'px')
