@@ -21,7 +21,7 @@ function changeHrWidth() {
     content.animate({opacity: 1}, 500)
   if (percent >=0.8)
   {
-    footer.animate({opacity: 1}, 500, function() {
+    footer.animate({opacity: 1}, 0, function() {
       followme.animate({opacity:1}, 500)
     })
     clearInterval(interval)
