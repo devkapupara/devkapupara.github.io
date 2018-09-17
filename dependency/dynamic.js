@@ -6,10 +6,10 @@ var followme = $('.follow-me')
 
 var interval = setInterval(changeHrWidth, 15)
 
-title.animate({opacity:1}, 500, function() {
-  title.animate({opacity:0}, 500, function() {
-    title.text("Meet Dev Kapupara").animate({opacity:1}, 500, function() {
-      $('.jumbotron h2').animate({opacity:1}, 500)
+title.animate({opacity:1}, 600, function() {
+  title.animate({opacity:0}, 600, function() {
+    title.text("Meet Dev Kapupara").animate({opacity:1}, 600, function() {
+      $('.jumbotron h2').animate({opacity:1}, 900)
     }).delay(400)
   }).delay(400)
 }).delay(400)
