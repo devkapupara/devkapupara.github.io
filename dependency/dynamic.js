@@ -9,7 +9,7 @@ var interval = setInterval(changeHrWidth, 15)
 title.animate({opacity:1}, 600, function() {
   title.animate({opacity:0}, 600, function() {
     title.text("Meet Dev Kapupara").animate({opacity:1}, 600, function() {
-      $('.jumbotron h2').animate({opacity:1}, 900)
+      $('.jumbotron h2').animate({opacity:1}, 1200)
     }).delay(400)
   }).delay(400)
 }).delay(400)
@@ -17,14 +17,14 @@ title.animate({opacity:1}, 600, function() {
 function changeHrWidth() {
   var width = parseInt(hr.css('width'))
   var percent = width / parseInt(hr.parent().width())
-  if(percent >= 0.6)
-    content.animate({opacity: 1}, 500)
-  if (percent >=0.8)
-  {
-    footer.animate({opacity: 1}, 0, function() {
-      followme.animate({opacity:1}, 500)
-    })
+  if (percent >= 0.8)
     clearInterval(interval)
+  else if (percent >= 0.5)
+  {
+    content.animate({opacity: 1}, 500)
+    followme.animate({opacity:1}, 500)
+    footer.animate({opacity: 1}, 500)
   }
-  hr.css('width', width + 4 + 'px')
+  else
+    hr.css('width', width + 4 + 'px')
 }
